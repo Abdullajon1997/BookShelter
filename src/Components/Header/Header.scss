@@ -1,0 +1,25 @@
+.header
+{
+    background-color: red;
+    &__inner
+{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    background: #E5E5E5;
+    &__list
+    {
+        width: 1280px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin-left: 385px;
+        margin-right: 146px;
+    }
+}
+}
