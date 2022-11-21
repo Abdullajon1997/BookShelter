@@ -8,11 +8,11 @@ import Signup from './../Pages/Signup/Signup'
 export default function Layout({ children }) {
     return (
         <>
-            <header>
+           
                 {/* <Link to='/home'>Home</Link>
                 <Link to='/signup'>Signup</Link> */}
                 <Header />
-            </header>
+          
             <main>
                 {children}
             </main>
