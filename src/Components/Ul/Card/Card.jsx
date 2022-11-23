@@ -1,11 +1,45 @@
 import React from 'react'
 import './Card.scss'
+import { useState, useEffect } from 'react'
 
 import clock from './../../Images/clock.png'
 
+const Base_URL='https://n36-blog.herokuapp.com/posts/:id  ';
+
+console.log(Base_URL);
+
+
 
 export default function Card() {
+
+    const [cardIn, setCardIn] = useState([])
+
+    useEffect(()=>{
+        async function categories(element){
+            const cardIn = await fetch('https://n36-blog.herokuapp.com/posts/:id ')
+            const CardOut = await cardIn.json()
+            setCardIn(CardOut)
+        } 
+        categories()
+    },[]) 
+
+    // console.log(cardIn);
+    
+
+    cardIn.length && <ul className='header__inner__list'>
+                                {
+                                    cardIn.map((e) => (
+                                        
+                                        <li to='/' className='header__inner__list__item'>
+                                            {e.category_name}
+                                        </li>
+                                    ))
+                                    
+                                }
+                            </ul>
+
     return (
+        
         <>
             <div sclassName="cards">
                 <div className="cards__inner">

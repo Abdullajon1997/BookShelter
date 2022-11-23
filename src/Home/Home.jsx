@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Components/Ul/Card/Card'
 import Cards from '../Components/Ul/Cards/Cards'
 import Layout from '../Layout/Layout'
+  
 
 export default function Home() {
     return (
@@ -17,15 +18,6 @@ export default function Home() {
                             </div>
                             <div className='col-8'>
                                 <h2 className='col-8__h2'>Recent Posts</h2>
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
-                                <Card />
                                 <Card />
                             </div>
                         </div>

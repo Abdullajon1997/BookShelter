@@ -16,9 +16,9 @@ export default function Layout({ children }) {
             <main>
                 {children}
             </main>
-            <footer>
+            {/* <footer> */}
                 <Footer />
-            </footer>
+            {/* </footer> */}
 
         </>
     )
