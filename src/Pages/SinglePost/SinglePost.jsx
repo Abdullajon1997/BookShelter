@@ -8,7 +8,6 @@ export default function SinglePost() {
         {
             const res = await fetch('https://n36-blog.herokuapp.com/posts/' + postId);
             const data = await res.json();
-            console.log(data);
         }
         getData()
     },[])
