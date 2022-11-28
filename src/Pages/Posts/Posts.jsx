@@ -29,7 +29,6 @@ export default function Posts() {
     function next() {
         setDirection((direction) => direction + 1)
     }
-    console.log(direction);
 
 
 
@@ -44,11 +43,9 @@ export default function Posts() {
             )
             const data = await res.json();
             setPosts(data.posts)
-            console.log(data);
         }
         getData()
     }, [categoryName, direction])
-    console.log(categoryName);
     return <div>
         <Layout>
             <div className='posts'>
