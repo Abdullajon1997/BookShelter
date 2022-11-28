@@ -3,6 +3,7 @@ import './Header.scss'
 import Layout from '../../Layout/Layout'
 import logo from './../Images/Logo__Header.png'
 import search__icon from './../../Components/Images/search__icon.png'
+import { BrowserRouter } from 'react-router-dom'
 
 import { Link } from 'react-router-dom'
 
@@ -36,45 +37,14 @@ export default function Header() {
     return (
 
         <>
-
-
             <header className='header'>
                 <div className="container">
                     <div className="header__inner">
-
-                        <Link to="/"><img src={logo} alt="LOGO" /></Link>
-                        <ul className='header__inner__list'>
-                            {
-                                respons ? <Link className='header__inner__list__item' to='/'>All</Link> :
-                                    <Link className='header__inner__list__item' to='/signup'>Login</Link>
-                            }
-                            <li className='header__inner__list__item'>
-                                <Link className='header__inner__list__item' to='/design'>DESIGN THEORE</Link>
-                            </li>
-
-                            <li className='header__inner__list__item'>
-                                <Link className='header__inner__list__item' to='/ux'>UX</Link>
-                            </li>
-                            <li className='header__inner__list__item'>
-                                <Link className='header__inner__list__item' to='/ui'>UI</Link>
-                            </li>
-                            <li className='header__inner__list__item'>
-                                <Link className='header__inner__list__item' to='/typography'>Typography</Link>
-                            </li>
-                        </ul>
-                        {/* {
-                            cardIn.length && <ul className='header__inner__list'>
-                                {
-                                    cardIn.map((e) => (
-                                        
-                                        <Link to='/' className='header__inner__list__item'>
-                                            {e.category_name}
-                                        </Link>
-                                    ))
-                                    
-                                }
-                            </ul>
-                        } */}
+                        <Link to="/signup"><img src={logo} alt="LOGO" /></Link>
+                        {
+                            cardIn?.length > 0 &&
+                            cardIn.map((item) =><Link className='header__inner__link' to={"/" + item.category_name}>{item.category_name}</Link>)
+                        }
                         <div class="input-group">
                             <div class="form-outline">
                                 <input id="search-input" type="search" class="form-control" placeholder='Search' />

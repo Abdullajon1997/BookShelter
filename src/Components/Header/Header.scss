@@ -8,17 +8,8 @@
     margin-bottom: 80px;
     background: #E5E5E5;
 
-    &__list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        gap: 50px;
 
-
-        &__item {
+        &__link {
             font-family: 'Roboto Mono';
             font-style: normal;
             font-weight: 400;
@@ -28,7 +19,7 @@
             color: #9A9A9A;
             text-decoration: none;
         }
-    }
+    
 }
 
 .input-group {

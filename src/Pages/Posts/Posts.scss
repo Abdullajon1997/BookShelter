@@ -1,0 +1,107 @@
+.list {
+    list-style: none;
+    text-decoration: none;
+
+    &__item {
+        width: 736px;
+
+        &__link {
+            text-decoration: none;
+        }
+
+        &__div {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &__time {
+                font-family: 'Roboto Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #777777;
+
+            }
+
+            &__name {
+                font-family: 'Roboto Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: right;
+                color: #777777;
+            }
+
+            &__title {
+                font-family: 'Roboto Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 28px;
+                color: #474747;
+            }
+        }
+
+        &__clock {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 11px;
+
+            &__img {
+                display: block;
+            }
+
+            &__span {
+                display: block;
+                font-family: 'Roboto Mono';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #777777;
+            }
+        }
+    }
+}
+
+.posts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 109px;
+
+    &__title {
+        font-family: 'Roboto Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #474747;
+
+    }
+
+    &__end {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        &__prev,
+        &__next {
+            display: block;
+            background-color: #E5E5E5;
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            color: #777777;
+            padding: 8px 20px;
+        }
+    }
+}
