@@ -7,7 +7,7 @@ import footer__logo from './../Images/footer__logo.png'
 export default function Footer() {
     return (
         <>
-            <footer>
+            <footer className='footer'>
                 <div className="container">
                     <div className="footer__inner">
                         <div>
