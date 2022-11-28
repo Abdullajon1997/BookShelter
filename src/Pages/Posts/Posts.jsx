@@ -18,22 +18,20 @@ export default function Posts() {
 
 
 
-    const [direction, setDirection] =useState(0);
+    const [direction, setDirection] = useState(0);
 
-    function prew()
-    {
-    setDirection((direction)=> direction - 1)
-    
-    
-       
+    function prew() {
+        setDirection((direction) => direction - 1)
+
+
+
     }
-    function next()
-    {
-    setDirection((direction)=> direction + 1)
+    function next() {
+        setDirection((direction) => direction + 1)
     }
     console.log(direction);
 
-    
+
 
     useEffect(() => {
         async function getData() {
@@ -49,8 +47,6 @@ export default function Posts() {
             console.log(data);
         }
         getData()
-
-
     }, [categoryName, direction])
     console.log(categoryName);
     return <div>
@@ -83,8 +79,8 @@ export default function Posts() {
                 </ul>
             </div>
             <div className='posts__end'>
-            <button className='posts__end__prev' disabled={direction===0 ? true : false} ref={prevBtn} onClick={prew}>Prev</button>
-            <button className='posts__end__next'disabled={direction===6 ? true : false} ref={nextBtn} onClick={next} >Next</button>
+                <button className='posts__end__prev' disabled={direction === 0 ? true : false} ref={prevBtn} onClick={prew}>Prev</button>
+                <button className='posts__end__next' disabled={direction === 6 ? true : false} ref={nextBtn} onClick={next} >Next</button>
             </div>
         </Layout>
     </div>
