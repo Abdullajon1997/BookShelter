@@ -84,7 +84,7 @@ export default function Posts() {
             </div>
             <div className='posts__end'>
             <button className='posts__end__prev' disabled={direction===0 ? true : false} ref={prevBtn} onClick={prew}>Prev</button>
-            <button className='posts__end__next' ref={nextBtn} onClick={next} >Next</button>
+            <button className='posts__end__next'disabled={direction===6 ? true : false} ref={nextBtn} onClick={next} >Next</button>
             </div>
         </Layout>
     </div>
