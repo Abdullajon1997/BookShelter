@@ -58,7 +58,7 @@ export default function Posts() {
                     {
                         posts?.length > 0 && posts.map(post => (
                             <li className='list__item'>
-                                <Link className='list__item__link' to={"/posts/" + post.id}>
+                                <Link className='list__item__link' to={"/singlePost/" + post.id}>
                                     <div className='list__item__div'>
                                         <time className='list__item__div__time'>{moment(post.created_time).format('LL')}</time>
                                         <p className='list__item__div__name'>{post.category_name}</p>

@@ -1,0 +1,54 @@
+.posts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__item {
+        &__name {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #777777;
+            margin-bottom: 24px;
+
+        }
+
+        &__title {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: #474747;
+            margin-bottom: 25px;
+        }
+
+        &__time {
+            display: block;
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #777777;
+            margin-bottom: 45px;
+        }
+
+        &__img {
+            display: block;
+            width: 733px;
+            margin-bottom: 50px;
+        }
+
+        &__body {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #474747;
+            width: 733px;
+        }
+    }
+}

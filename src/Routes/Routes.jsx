@@ -4,6 +4,7 @@ import Home from './../Home/Home'
 import Signup from '../Pages/Signup/Signup'
 import Posts from '../Pages/Posts/Posts'
 import SinglePost from '../Pages/SinglePost/SinglePost'
+import Eror from '../Pages/Eror/Eror'
 
 
 export default function RoutesWrapper() {
@@ -13,7 +14,9 @@ export default function RoutesWrapper() {
                 <Route path='/' element={<Home />} />
                 <Route path='/signup' element={<Signup />} />
                 <Route path='/:categoryName' element={<Posts />} />
-                <Route path='posts/:postId' element={<SinglePost />} />
+                <Route path='singlePost/:postId' element={<SinglePost />} />
+                <Route path='*' element={<Eror />} />
+                
 
             </Routes>
         </>
